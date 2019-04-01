@@ -1,0 +1,20 @@
+{
+  "name": "study-gulp",
+  "version": "1.0.0",
+  "description": "study gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carvetime/study-gulp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carvetime/study-gulp/issues"
+  },
+  "homepage": "https://github.com/carvetime/study-gulp#readme"
+}

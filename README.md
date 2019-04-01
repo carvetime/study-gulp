@@ -1,2 +1,2 @@
 # study-gulp
-study gulp
+study gulp demo
