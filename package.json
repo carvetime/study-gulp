@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/carvetime/study-gulp/issues"
   },
-  "homepage": "https://github.com/carvetime/study-gulp#readme"
+  "homepage": "https://github.com/carvetime/study-gulp#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
 }
