@@ -11,4 +11,3 @@ gulp.task('default',function(){
 gulp.task('taska',function(){
     console.log('execute taska')
 })
-
