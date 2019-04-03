@@ -18,20 +18,29 @@ var paths = {
   distJS: 'dist/**/*.js'
 };
 
-gulp.task('html', function () {
-  return gulp.src(paths.srcHTML).pipe(gulp.dest(paths.tmp));
+gulp.task('html', function (done) {
+  gulp.src(paths.srcHTML).pipe(gulp.dest(paths.tmp));
+  done();
 });
 
-gulp.task('css', function () {
-    return gulp.src(paths.srcCSS).pipe(gulp.dest(paths.tmp));
+gulp.task('css', function (done) {
+    gulp.src(paths.srcCSS).pipe(gulp.dest(paths.tmp));
+    done();
 });
 
-gulp.task('js', function () {
-    return gulp.src(paths.srcJS).pipe(gulp.dest(paths.tmp));
+gulp.task('js', function (done) {
+    gulp.src(paths.srcJS).pipe(gulp.dest(paths.tmp));
+    done();
 });
 
-gulp.task('copy',gulp.series(['html','css','js'],function(){
-    console.log('copy complete')
-}));
+gulp.task('copy',gulp.series(['html','js','css'],function(done){
+    console.log('------copy done---')
+    done();
+}))
+
+gulp.task('watch',function(){
+    gulp.watch(paths.srcHTML,gulp.series('html'))
+    gulp.watch(paths.srcCSS,gulp.series('css'))
+});
 
 
