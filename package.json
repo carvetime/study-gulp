@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/carvetime/study-gulp#readme",
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-connect": "^5.7.0"
   }
 }
